@@ -1,6 +1,6 @@
 # COCOM v11 Changelog
 
-## v10.0.0 (2024-12)
+## v10.0.0 (2025-12)
 
 ### New Features
 - **Unified Sequential Training**: Single script for complete training pipeline
