@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ## Quick Start
 
 ```bash
-python experiments/cocom_v10_unified_training.py \
+python scripts/train_cocom_v11.py \
     --device cuda:0 \
     --batch_size 16 \
     --tactical_epochs 10 \
