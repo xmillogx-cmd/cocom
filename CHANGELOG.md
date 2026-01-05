@@ -1,4 +1,4 @@
-# COCOM v10 Changelog
+# COCOM v11 Changelog
 
 ## v10.0.0 (2024-12)
 
