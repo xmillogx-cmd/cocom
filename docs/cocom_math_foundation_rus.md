@@ -151,30 +151,9 @@ $$
 \nabla_{E_i} = \frac{\partial L}{\partial E_i} \cdot \mathbb{1}[\text{expert } i \text{ contributed}]
 $$
 
----
 
-## 7. Эмпирическое подтверждение
 
-### LRA Image Task
-
-| Model | Accuracy | Params | Acc/Param ratio |
-|-------|----------|--------|-----------------|
-| Transformer | 42.44% | ~250K | 0.00017 |
-| **COCOM** | **43.71%** | 1.16M | **0.00038** |
-
-**Результат:** COCOM на **+1.27%** лучше при comparable overhead.
-
-### Dynamics Analysis
-
-```
-Epoch 1-5:   Agreement падает (16-25%) → эксперты специализируются
-Epoch 5-10:  Agreement растёт (22-28%) → находят общие паттерны
-Epoch 10+:   Agreement стабилен → оптимальная diversity
-```
-
----
-
-## 8. Выводы
+## 7. Выводы
 
 ### Почему COCOM работает:
 
