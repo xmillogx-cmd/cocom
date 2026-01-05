@@ -221,11 +221,9 @@ Each expert can be used independently as a lightweight classifier:
 ```
 cocom
 ├── cocom_v11          # Model architecture
-└── scripts            # Train scripts
+└── scripts            # Training scripts
 └── tests
-experiments/
-├── cocom_v10_unified_training.py  # Training script
-└── ...
+└── docs
 ```
 
 ## Citation
