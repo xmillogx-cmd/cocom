@@ -1,4 +1,5 @@
 # COCOM-Attention v11
+![architecture](https://github.com/user-attachments/assets/4fc32285-98e3-426b-ae4b-2c890107a7dd)
 
 **Cooperative Consensus Multi-Expert Attention** - A multi-expert sequence classification architecture with staged sequential training.
 
