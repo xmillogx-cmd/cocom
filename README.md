@@ -185,34 +185,33 @@ Each expert can be used independently as a lightweight classifier:
 - ListOps requires global attention (S, E) more than sequential EMA (T)
 
 ## Command Line Arguments
-
-
-Argument	Type	Default	Description
---task	str	listops	Task: listops, text, image, pathfinder32, pathfinder128
---data_dir	str	./lra_data	Data directory
---d_model	int	256	Model dimension
---n_heads	int	8	Number of attention heads
---input_type	str	None	Input type (auto-detected from task preset)
---group_size	int	None	Token grouping for 1D tasks
---patch_size	int	None	Patch size for 2D tasks
---use_rope	flag	True	Use Rotary Position Embedding
---no_rope	flag	False	Disable RoPE
---batch_size	int	None	Batch size (auto from task preset)
---staged	flag	True	Use staged training
---full_only	flag	False	Train all parameters from start
---epochs_tactical	int	8	Epochs for tactical stage
---epochs_strategic	int	5	Epochs for strategic stage
---epochs_exploratory	int	5	Epochs for exploratory stage
---epochs_full	int	20	Epochs for full stage
---lr_tactical	float	0.003	Learning rate for tactical stage
---lr_strategic	float	0.001	Learning rate for strategic stage
---lr_exploratory	float	0.001	Learning rate for exploratory stage
---lr_full	float	3e-4	Learning rate for full stage
---early_stop	int	5	Early stopping patience (full stage only)
---device	str	cuda	Device for training
---fp32	flag	False	Disable FP16 (use FP32)
---checkpoint	str	None	Path to checkpoint to resume from
---output_dir	str	./checkpoints	Checkpoint output directory
+| Argument | Type | Default | Description |
+|----------|------|---------|-------------|
+| `--task` | str | `listops` | Task: `listops`, `text`, `image`, `pathfinder32`, `pathfinder128` |
+| `--data_dir` | str | `./lra_data` | Data directory |
+| `--d_model` | int | `256` | Model dimension |
+| `--n_heads` | int | `8` | Number of attention heads |
+| `--input_type` | str | `None` | Input type (auto-detected from task preset) |
+| `--group_size` | int | `None` | Token grouping for 1D tasks |
+| `--patch_size` | int | `None` | Patch size for 2D tasks |
+| `--use_rope` | flag | `True` | Use Rotary Position Embedding |
+| `--no_rope` | flag | `False` | Disable RoPE |
+| `--batch_size` | int | `None` | Batch size (auto from task preset) |
+| `--staged` | flag | `True` | Use staged training |
+| `--full_only` | flag | `False` | Train all parameters from start |
+| `--epochs_tactical` | int | `8` | Epochs for tactical stage |
+| `--epochs_strategic` | int | `5` | Epochs for strategic stage |
+| `--epochs_exploratory` | int | `5` | Epochs for exploratory stage |
+| `--epochs_full` | int | `20` | Epochs for full stage |
+| `--lr_tactical` | float | `0.003` | Learning rate for tactical stage |
+| `--lr_strategic` | float | `0.001` | Learning rate for strategic stage |
+| `--lr_exploratory` | float | `0.001` | Learning rate for exploratory stage |
+| `--lr_full` | float | `3e-4` | Learning rate for full stage |
+| `--early_stop` | int | `5` | Early stopping patience (full stage only) |
+| `--device` | str | `cuda` | Device for training |
+| `--fp32` | flag | `False` | Disable FP16 (use FP32) |
+| `--checkpoint` | str | `None` | Path to checkpoint to resume from |
+| `--output_dir` | str | `./checkpoints` | Checkpoint output directory |
 
 
 
