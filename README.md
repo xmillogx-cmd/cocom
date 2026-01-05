@@ -1,10 +1,10 @@
-# COCOM-Attention v10
+# COCOM-Attention v11
 
 **Cooperative Consensus Multi-Expert Attention** - A multi-expert sequence classification architecture with staged sequential training.
 
 ## Overview
 
-COCOM v10 combines three specialized attention experts with a confidence-weighted arbitrator for sequence classification tasks. Each expert uses a different attention mechanism optimized for different pattern types:
+COCOM v11 combines three specialized attention experts with a confidence-weighted arbitrator for sequence classification tasks. Each expert uses a different attention mechanism optimized for different pattern types:
 
 | Expert | Mechanism | Best For |
 |--------|-----------|----------|
