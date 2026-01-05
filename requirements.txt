@@ -1,0 +1,10 @@
+# Core dependencies
+torch>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Optional: for data processing
+pathlib2>=2.3.7
+
+# For mixed precision training
+# (included in PyTorch, no separate install needed)
